@@ -6,8 +6,9 @@
 <body>
   <h1 id="kapitalchik"></h1>
   <script>
-    let how_many = 100;
     var kp = document.getElementById("kapitalchik");
+    let href = window.location.href.split('#').pop();
+    let how_many = href;
     kp.textContent = "Капитальчик пополнен на " + how_many + "£.";
   </script>
 </body>
