@@ -4,11 +4,10 @@
 <title>Goto Link</title>
 </head>
 <body>
+  <h1 id="textik"></h1>
   <script>
-    window.location.href = 'I will redirect u to https://nacchip.github.io/kapitalchik/' + window.location.href.split('?', '|').pop();
-    /*if(window.location.href.split('').pop()) {
-
-    }*/
+    let textik = document.getElementById("textik");
+    textik.textContent = 'I will redirect u to https://nacchip.github.io/kapitalchik/' + window.location.href.split('?', '|').pop();
   </script>
 </body>
 </html>
