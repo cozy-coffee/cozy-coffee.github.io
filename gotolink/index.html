@@ -7,9 +7,7 @@
   <h1 id="callback"></h1>
   <script>
     let callback_text = document.getElementById("callback");
-    if(window.location.href.split('#', '|').pop()) {
-      callback_text.textContent('I will redirect u to https://nacchip.github.io/kapitalchik/' + window.location.href.split('#', '|').pop());
-    }
+    callback_text.textContent('I will redirect u to https://nacchip.github.io/kapitalchik/' + window.location.href.split('#').pop());
   </script>
 </body>
 </html>
