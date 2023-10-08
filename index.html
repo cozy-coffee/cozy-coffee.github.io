@@ -9,7 +9,12 @@
   <h1 id="callback"></h1>
   <script>
     let callback = document.getElementById("callback");
-    callback.textContent = window.navigator.language;
+    if(window.navigator.language == 'ru') {
+      callback.textContent = 'Добро пожаловать в Cozy.Coffee!';
+    }
+    else {
+      callback.textContent = 'Welcome to the Cozy.Coffee!';
+    }
   </script>
 </body>
 </html>
