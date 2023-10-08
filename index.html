@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Вклад в Капитальчик</title>
+  <title>Cozy.Coffee</title>
 </head>
 <body>
-  <h1 id="kapitalchik"></h1>
+  <h1 id="callback"></h1>
   <script>
-    let kp = document.getElementById("kapitalchik");
-    let how_many = window.location.href.split('#').pop();
-    let name = window.location.href.split('?').pop();
-    kp.textContent = "Капитальчик пополнен на " + how_many + "£. От имени " + name + ".";
+    let callback = document.getElementById("callback");
+    callback.textContent = window.navigator.language;
   </script>
 </body>
 </html>
