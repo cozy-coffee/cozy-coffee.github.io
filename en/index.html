@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    document.getElementById('logo_circle').src = 'https://cozy-coffee.github.io/files/images/Logo%20(circle).svg';
+  </script>
   <style>
-    #loadinglogo_bg {
+    #loading {
         position: fixed;
         top: 0;
         left: 0;
@@ -12,22 +15,28 @@
         height: 100%; 
         background-color: #633D38;
     } 
-    #loadinglogo_bg {
-        position: fixed;
+    #logo_circle {
         top: 0;
         left: 0;
-        width: 50%;
-        height: 50%; 
+        width: 70%;
+        height: 70%; 
     } 
   </style>
 </head>
 <body>
-  <div id='loadinglogo_bg'>
-  <img id="logo_circle" src="https://cozy-coffee.github.io/files/images/Logo%20(circle).svg">
+  <div id='loading'>
+  <img id="logo_circle">
   </div>
   <script>
-    logo = new Image();
-    logo.src='https://cozy-coffee.github.io/files/images/Logo%20(circle).svg'
+    //Id Object Imports
+    const loading = document.getElementById('loading');
+
+    //Loading
+    window.onload = function() {
+      setInterval(function(){
+	      loading.style.display = 'none';
+      }, 2500);
+    };
   </script>
 </body>
 </html>
