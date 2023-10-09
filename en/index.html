@@ -12,12 +12,22 @@
         height: 100%; 
         background-color: #633D38;
     } 
+    #loadinglogo_bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%; 
+    } 
   </style>
 </head>
 <body>
-  <div id='loadinglogo_bg'></div>
+  <div id='loadinglogo_bg'>
+  <img id="logo_circle" src="https://cozy-coffee.github.io/files/images/Logo%20(circle).svg">
+  </div>
   <script>
-    
+    logo = new Image();
+    logo.src='https://cozy-coffee.github.io/files/images/Logo%20(circle).svg'
   </script>
 </body>
 </html>
